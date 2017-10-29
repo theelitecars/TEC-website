@@ -1,1 +1,4 @@
 node_modules/
+wp-config.php
+.sass-cache/
+elitecars/css/
