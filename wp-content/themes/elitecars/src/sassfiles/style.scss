@@ -406,20 +406,18 @@ header#masthead {
 
 .section {
 	width: 100%;
-	padding: 70px 5px;
+	padding: 80px 5px;
 
 	&.bg_section {
 		background-color: #f9f9f9;
 	}
 	.header {
-		padding-left: 30px;
 		margin-bottom: 20px;
 		span{
 			display: block;
 		}
 		span:first-child {
-			font-size: 35px;
-			font-weight: 600;
+			font-size: 30px;
 			margin-right: 30px;
 			text-transform: uppercase;
 			font-family: 'Roboto Condensed', sans-serif;
@@ -432,25 +430,24 @@ header#masthead {
 	}
 }
 
-.car_tiles {
-	width: 100%;
+.car_tiles_row {
+	margin-bottom: -10px;
 
-	&:after {
-		content: ".";
-		display: block;
-		clear: both;
-		visibility: hidden;
-		line-height: 0;
-		height: 0; 
+	&.row {
+	margin-right: -5px;
+ 	margin-left: -5px;
+
+		> .col,
+		> [class*="col-"] {
+			padding-right: 5px;
+			padding-left: 5px;
+		}
 	}
 
 	.car_tile {
-		float: left;
-		width: calc(33.33333333333333% - 10px);
 		padding: 25px;
-		margin: 5px;
-
 		background-color: #fff;
+		margin-bottom: 10px;
 
 		& > .title {
 			& > div {
@@ -516,6 +513,42 @@ header#masthead {
 		}
 	}
 }
+
+.welcome {
+	height: 400px;
+	background-image: url('../img/bg-one.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.monthly_stock {
+	.filter {
+		margin-bottom: 20px;
+		ul {
+			li {
+				margin-right: 2px;
+				padding: 2px 15px;
+				font-size: 18px;
+				border: 1px solid transparent;
+				cursor: pointer;
+
+				&.active {
+					border-color: #222222;
+				}
+				&:hover {
+					border-color: #222222;
+				}
+			}
+		}
+	}
+	.deal_cars {
+		.deal_car {
+			padding: 20px;
+		}
+	}
+}
+
 
 @media only screen and (max-width: 992px) {
 	header#masthead {
