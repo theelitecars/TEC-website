@@ -48,7 +48,7 @@
 			</div> -->
 			<div class="menu">
 				<div class="mobile-view-header">
-					<i class="fa fa-times" aria-hidden="true"></i>
+					<i class="fa fa-times close-menu" aria-hidden="true"></i>
 				</div>
 				<?php 
 					 wp_nav_menu(array(
@@ -59,7 +59,7 @@
 					));
 				?>
 			</div>
-			<div id="menu-bg"></div>
+			<div id="menu-bg" class="close-menu"></div>
 		</div>
 	</header><!-- #masthead -->
 	<?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
