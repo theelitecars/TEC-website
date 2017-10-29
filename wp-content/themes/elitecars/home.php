@@ -240,42 +240,133 @@
 	</div>
 	<div class="container-fluid deal_cars">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-4 col-sm-6">
 				<div class="deal_car">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/car1.png" class="img-fluid">
-					<div>
-						<span>Range Rover</span>
-						<span>ESCALADE 2017</span>
+					<div class="title clampThis">
+						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
 					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="selection"><span>VIEW</span></div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-4 col-sm-6">
 				<div class="deal_car">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/car2.png" class="img-fluid">
+					<div class="title clampThis">
+						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="selection"><span>VIEW</span></div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-4 col-sm-6">
 				<div class="deal_car">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/car3.png" class="img-fluid">
+					<div class="title clampThis">
+						RANGE ROVER VOUGE HSE 2016
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="selection"><span>VIEW</span></div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-4 col-sm-6">
 				<div class="deal_car">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/car4.png" class="img-fluid">
+					<div class="title clampThis">
+						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="selection"><span>VIEW</span></div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-4 col-sm-6">
 				<div class="deal_car">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/car5.png" class="img-fluid">
+					<div class="title clampThis">
+						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="selection"><span>VIEW</span></div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-4 col-sm-6">
 				<div class="deal_car">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/car6.png" class="img-fluid">
+					<div class="title clampThis">
+						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="selection"><span>VIEW</span></div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="deal_car">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/car7.png" class="img-fluid">
+					<div class="title clampThis">
+						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="selection"><span>VIEW</span></div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="deal_car">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/car8.png" class="img-fluid">
+					<div class="title clampThis">
+						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="selection"><span>VIEW</span></div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
+<div class="section welcome">
+</div>
+<div class="blogs">
+	<div class="row no-gutters">
+		<div class="col-sm-4">
+			<div class="blog">
+				<div class="img-box" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog1.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+				</div>
+				<div class="title clampThis2">
+					Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+				</div>
+				<div class="intro_content clampThis3">
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="blog">
+				<div class="img-box" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog2.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="blog">
+				<div class="img-box" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog3.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php get_footer(); ?>
