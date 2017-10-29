@@ -7,7 +7,7 @@ ul.inline {
 		display: block;
 		clear: both;
 		visibility: hidden;
-		line-height: 0;
+		line-height: 0; 
 		height: 0; 
 	}
 
@@ -578,4 +578,38 @@ header#masthead {
 			} */
 		}
 	}
+}
+
+/* footer asick */
+footer{
+	h2{ padding:5px; text-transform: uppercase !important;    text-align: left;
+    padding: 5px 34px;} 
+	ul li{  list-style: none;text-align: left;padding: 0 0 5px;}
+	.fa{    font-size: 35px;
+    padding: 13px;}
+    .cta--wrapper {
+    border-radius: 3px;
+    background-color: #99979C;
+    transition: all .3s,visibility 0s;
+    transition-timing-function: cubic-bezier(.86,0,.07,1);
+    padding: 10px 10px;
+        width: 62%;
+    text-align: center;
+    margin: 0 auto;
+}
+ .cta-state-0 {
+    color: transparent;
+    position: relative;
+    z-index: 1;    color: #2B2830;
+}
+.footer-divider{
+	    border-color: #99979C;
+    margin-top: 1px;
+    box-sizing: content-box;
+    margin: 0 0 1rem;
+    border-style: solid;
+    border-width: 1px 0 0;
+    height: 0; 
+}
+ 
 }
