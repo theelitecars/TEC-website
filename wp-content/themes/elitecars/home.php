@@ -105,89 +105,175 @@
 </div>
 
 <div class="section bg_section">
-	<div class="header">
-		<span>New Stocks</span>
-		<span>Choose from our widest selection of luxury vehicles on offer and drive the car of your dreams today!</span>
-	</div>
 
-	<div class="car_tiles">
-		<div class="car_tile">
-			<div class="title">
-				<div>ROLLS ROYCE</div>
-				<div>Phantom</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="header">
+					<span>New Stocks</span>
+					<span>Choose from our widest selection of luxury vehicles on offer and drive the car of your dreams today!</span>
+				</div>
 			</div>
-			<div class="price">
-				<span>AED 1,000,000</span>
-			</div>
-			<div class="car">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
-			</div>		
 		</div>
-		<div class="car_tile">
-			<div class="title">
-				<div>ROLLS ROYCE</div>
-				<div>Phantom</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row car_tiles_row">
+			<div class="col-md-4 col-sm-6">
+				<div class="car_tile">
+					<div class="title">
+						<div>ROLLS ROYCE</div>
+						<div>Phantom</div>
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="car">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
+					</div>		
+				</div>
 			</div>
-			<div class="price">
-				<span>AED 1,000,000</span>
+			<div class="col-md-4 col-sm-6">
+				<div class="car_tile">
+					<div class="title">
+						<div>ROLLS ROYCE</div>
+						<div>Phantom</div>
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="car">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
+					</div>		
+				</div>
 			</div>
-			<div class="car">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
-			</div>		
+			<div class="col-md-4 col-sm-6">
+				<div class="car_tile">
+					<div class="title">
+						<div>ROLLS ROYCE</div>
+						<div>Phantom</div>
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="car">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
+					</div>		
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="car_tile">
+					<div class="title">
+						<div>ROLLS ROYCE</div>
+						<div>Phantom</div>
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="car">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
+					</div>		
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="car_tile">
+					<div class="title">
+						<div>ROLLS ROYCE</div>
+						<div>Phantom</div>
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="car">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
+					</div>		
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="car_tile">
+					<div class="title">
+						<div>ROLLS ROYCE</div>
+						<div>Phantom</div>
+					</div>
+					<div class="price">
+						<span>AED 1,000,000</span>
+					</div>
+					<div class="car">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
+					</div>		
+				</div>
+			</div>
 		</div>
-		<div class="car_tile">
-			<div class="title">
-				<div>ROLLS ROYCE</div>
-				<div>Phantom</div>
+	</div>
+</div>
+<div class="section welcome">
+</div>
+<div class="section monthly_stock">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="header">
+					<span>Monthly Deals</span>
+					<span>Browse through our latest luxurious cars in Stock!</span>
+				</div>
 			</div>
-			<div class="price">
-				<span>AED 1,000,000</span>
-			</div>
-			<div class="car">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
-			</div>		
 		</div>
-		<div class="car_tile">
-			<div class="title">
-				<div>ROLLS ROYCE</div>
-				<div>Phantom</div>
+	</div>
+	<div class="container-fluid filter">
+		<div class="row">
+			<div class="col-12">
+				<ul class="inline">
+					<li class="active">All</li>
+					<li>Cadillac</li>
+					<li>Range Rover</li>
+					<li>Porsche</li>
+					<li>BMW</li>
+					<li>Nissan</li>
+				</ul>
 			</div>
-			<div class="price">
-				<span>AED 1,000,000</span>
-			</div>
-			<div class="car">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
-			</div>		
 		</div>
-		<div class="car_tile">
-			<div class="title">
-				<div>ROLLS ROYCE</div>
-				<div>Phantom</div>
+	</div>
+	<div class="container-fluid deal_cars">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="deal_car">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/car1.png" class="img-fluid">
+					<div>
+						<span>Range Rover</span>
+						<span>ESCALADE 2017</span>
+					</div>
+				</div>
 			</div>
-			<div class="price">
-				<span>AED 1,000,000</span>
+			<div class="col-md-3">
+				<div class="deal_car">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/car2.png" class="img-fluid">
+				</div>
 			</div>
-			<div class="car">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
-			</div>		
-		</div>
-		<div class="car_tile">
-			<div class="title">
-				<div>ROLLS ROYCE</div>
-				<div>Phantom</div>
+			<div class="col-md-3">
+				<div class="deal_car">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/car3.png" class="img-fluid">
+				</div>
 			</div>
-			<div class="price">
-				<span>AED 1,000,000</span>
+			<div class="col-md-3">
+				<div class="deal_car">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/car4.png" class="img-fluid">
+				</div>
 			</div>
-			<div class="car">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80.png" class="img-fluid">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/main_g80_on.png" class="img-fluid">
-			</div>		
+			<div class="col-md-3">
+				<div class="deal_car">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/car5.png" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="deal_car">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/car6.png" class="img-fluid">
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
