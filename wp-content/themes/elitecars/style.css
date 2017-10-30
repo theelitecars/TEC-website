@@ -842,12 +842,7 @@ object {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer#colophon {
-  background: #2a2730 none repeat scroll 0 0;
-  color: #99979c;
-  padding: 1.250rem 0;
-  text-align: center;
-}
+  
 
 .copyright {
   font-size: 0.875rem;

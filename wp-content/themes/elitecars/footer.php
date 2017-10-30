@@ -19,7 +19,10 @@
     	<div class="container">
         <div class="row">
         <div class="col-md-3">
-        <h1>about</h1>
+        <img src="<?php echo get_theme_mod( 'wp_bootstrap_starter_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+        <p>The Elite Cars deals with brand new and pre-owned British, German and Italian cars, including Land Rover, BMW, Mercedes, Jaguar, Porsche, Ferrari and Maserati.
+<a href="#" class="btn-default btn2">Read More</a>
+</p>
         </div>
         <div class="col-md-3">
         <h2>Brands</h2>
@@ -72,10 +75,9 @@
 
         </div>
         </div>
-        <hr class="footer-divider" /> 
         </div>
         
-		<div class="container">
+		<div class="container-fluide" id="footer-copy">
             <div class="site-info">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                 <span class="sep"> | </span>
