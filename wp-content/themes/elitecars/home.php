@@ -212,6 +212,16 @@
 	</div>
 </div>
 <div class="section welcome">
+	<div class="container">
+		<div class="row">
+			<div class="col-12"><span>welcome to the elite cars</span></div>
+			<div class="col-12">
+				<p>
+					There are a number of new and used car dealers in Dubai, but there are two things that set us apart from the competition: luxury vehicles at the most competitive prices and uncompromising customer service. Offering over 200 British, German and Italian luxury car brands such as Land Rover, BMW, Mercedes, Jaguar, Porsche, Ferrari, and Maserati at our showrooms in two locations, we offer a wide selection to choose from. Hence, you will find the one that perfectly suit your needs, lifestyle and budget.
+				</p>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="section monthly_stock">
 	<div class="container-fluid">
@@ -339,6 +349,60 @@
 		</div>
 	</div>
 </div>
+<div class="section bg_section quick_links">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="quick_link">
+					<div>
+						<div class="icon">
+							<i class="fa fa-car" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div>VIEW OUR STOCK</div>
+					<div>We have one of the largest showrooms in Dubai.</div>
+					<div><a href="">View All Our stock</a></div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="quick_link">
+					<div>
+						<div class="icon">
+							<i class="fa fa-users" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div>Meet our team</div>
+					<div>We have a friendly, knowledgeable and multilingual team of sales executives who make car shopping an exciting and stress-free experience.</div>
+					<div><a href="">Contact us</a></div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="quick_link">
+					<div>
+						<div class="icon">
+							<i class="fa fa-wrench" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div>elite motors services</div>
+					<div>We dont just sell cars, we also offer repairs, maintenance and valet services.</div>
+					<div><a href="">view services</a></div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="quick_link">
+					<div>
+						<div class="icon">
+							<i class="fa fa-bullhorn" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div>promotions</div>
+					<div>We have one of the largest showrooms in Dubai.</div>
+					<div><a href="">current promotions</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="blogs section">
 	<div class="container-fluid">
 		<div class="row">
@@ -392,6 +456,9 @@
 					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
 				</div>
 			</div>
+		</div>
+		<div class="col-12 text-center btn-container">
+			<a href="" class="btn e_button_two">View All our blog posts</a>
 		</div>
 	</div>
 </div>
