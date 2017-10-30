@@ -543,6 +543,14 @@ header#masthead {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+
+	.container {
+		.row {
+			> [class^="col-"] {
+				text-align: center;
+			}
+		}
+	}
 }
 
 .monthly_stock {
