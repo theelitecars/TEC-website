@@ -18,7 +18,10 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
     	<div class="container">
         <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
+        <h1>about</h1>
+        </div>
+        <div class="col-md-3">
         <h2>Brands</h2>
         <ul>
         <li>Audi</li>
@@ -37,7 +40,7 @@
         <li>Rolls Royce</li>
         </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
         <h2>About</h2>
         <ul>
         <li>About Us</li>
@@ -52,7 +55,7 @@
         <li>Contact Us</li>
         </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
         <h2>Contact Us</h2>
         <ul>
         <li>Address: Street 4, Al Quoz Ind. Area 3, Dubai, UAE</li>
