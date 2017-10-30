@@ -693,8 +693,12 @@ header#masthead {
 
 /* footer asick */
 footer{
+	background: #252525;
+    border-top: 4px solid #DC3746;
+    padding-top: 35px;
+    color: #959595;
 	h2{ padding:5px; text-transform: uppercase !important;    text-align: left;
-    padding: 5px 34px;} 
+    padding: 5px 34px; font-size:25px;} 
 	ul li{  list-style: none;text-align: left;padding: 0 0 5px;}
 	.fa{    font-size: 35px;
     padding: 13px;}
@@ -722,6 +726,30 @@ footer{
     border-width: 1px 0 0;
     height: 0; 
 }
+#footer-copy{
+	background: #eee;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    color: #000;
+    font-size: 13px; text-align:center;
+}
+.btn-default.btn2 {
+    display: inline-block;
+    color: #898989;
+    border: none;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 0px 15px 0 0;
+    text-decoration: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: none;
+    background: url(../img/arr1.png) right center no-repeat;
+} 
+ 
  
 }
-.test{background-color:red;}
