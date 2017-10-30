@@ -249,7 +249,7 @@
 					<div class="price">
 						<span>AED 1,000,000</span>
 					</div>
-					<div class="selection"><span>VIEW</span></div>
+					<div class="selection"></div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6">
@@ -261,7 +261,7 @@
 					<div class="price">
 						<span>AED 1,000,000</span>
 					</div>
-					<div class="selection"><span>VIEW</span></div>
+					<div class="selection"></div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6">
@@ -273,7 +273,7 @@
 					<div class="price">
 						<span>AED 1,000,000</span>
 					</div>
-					<div class="selection"><span>VIEW</span></div>
+					<div class="selection"></div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6">
@@ -285,7 +285,7 @@
 					<div class="price">
 						<span>AED 1,000,000</span>
 					</div>
-					<div class="selection"><span>VIEW</span></div>
+					<div class="selection"></div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6">
@@ -297,7 +297,7 @@
 					<div class="price">
 						<span>AED 1,000,000</span>
 					</div>
-					<div class="selection"><span>VIEW</span></div>
+					<div class="selection"></div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6">
@@ -309,7 +309,7 @@
 					<div class="price">
 						<span>AED 1,000,000</span>
 					</div>
-					<div class="selection"><span>VIEW</span></div>
+					<div class="selection"></div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6">
@@ -321,7 +321,7 @@
 					<div class="price">
 						<span>AED 1,000,000</span>
 					</div>
-					<div class="selection"><span>VIEW</span></div>
+					<div class="selection"></div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-4 col-sm-6">
@@ -333,37 +333,63 @@
 					<div class="price">
 						<span>AED 1,000,000</span>
 					</div>
-					<div class="selection"><span>VIEW</span></div>
+					<div class="selection"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="section welcome">
-</div>
-<div class="blogs">
+<div class="blogs section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="header">
+					<span>Recent Blogs</span>
+					<span>Browse through our latest luxurious cars in Stock!</span>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="row no-gutters">
 		<div class="col-sm-4">
 			<div class="blog">
-				<div class="img-box" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog1.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+				<div class="img-box">
+					<div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog1.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+					</div>
 				</div>
-				<div class="title clampThis2">
-					Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+				<div class="title clampThis">
+					De Finibus Bonorum et Malorum
 				</div>
-				<div class="intro_content clampThis3">
+				<div class="intro_content clampThis2">
 					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-4">
 			<div class="blog">
-				<div class="img-box" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog2.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+				<div class="img-box">
+					<div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog2.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+					</div>
+				</div>
+				<div class="title clampThis">
+					De Finibus Bonorum et Malorum
+				</div>
+				<div class="intro_content clampThis2">
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-4">
 			<div class="blog">
-				<div class="img-box" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog3.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+				<div class="img-box">
+					<div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog3.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+					</div>
+				</div>
+				<div class="title clampThis">
+					De Finibus Bonorum et Malorum
+				</div>
+				<div class="intro_content clampThis2">
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
 				</div>
 			</div>
 		</div>

@@ -499,10 +499,10 @@ header#masthead {
 				transition: all 0.5s ease;
 
 				&:first-child {
-					width: 90%;
+					width: 80%;
 				}
 				&:nth-child(2) {
-					width: 45%;
+					width: 35%;
 					opacity: 0;
 					visibility: hidden;
 				}
@@ -527,11 +527,12 @@ header#masthead {
 }
 
 .welcome {
-	height: 400px;
+	height: 500px;
 	background-image: url('../img/bg-one.jpg');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-attachment: fixed;
 }
 
 .monthly_stock {
@@ -621,10 +622,41 @@ header#masthead {
 
 .blogs {
 	width: 100%;
+	&.section {
+		padding: 0px;
+		padding-bottom: 100px;
+	}
 	.blog {
 		.img-box {
-			height: 350px;
-			width: 100%;
+			overflow: hidden;
+			.img {
+				height: 350px;
+				width: 100%;
+
+				transition: all 0.5s ease-in-out;
+			}
+
+			&:hover {
+				.img {
+					transform: scale(1.1);
+				}
+			}
+		}
+
+		.title {
+			text-align: center;
+			font-size: 25px;
+			font-family: 'Roboto Condensed', sans-serif;
+			line-height: 1;
+			padding: 20px 15px 0px 15px;
+		}
+		.intro_content {
+			text-align: justify;
+			font-family: 'Open Sans', sans-serif;
+			color: #b9b9b9;
+			font-size: 16px;
+			padding: 0px 15px;
+			margin: 20px 0px;
 		}
 	}
 }
