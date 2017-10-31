@@ -458,7 +458,10 @@
 			</div>
 		</div>
 		<div class="col-12 text-center btn-container">
-			<a href="" class="btn e_button_two">View All our blog posts</a>
+			<a href="" class="btn e_button_two">
+				<span>View All our blog posts</span>
+				<span>View All our blog posts</span>
+			</a>
 		</div>
 	</div>
 </div>
