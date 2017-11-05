@@ -1,8 +1,16 @@
+<?php
+
+/*
+Template Name: home
+*/
+
+?>
 <?php get_header(); ?>
 
 <div class="slider">
 	<div>
-		 <img src="<?php echo get_template_directory_uri(); ?>/img/slide.jpg" alt="" style="z-index: 2; opacity: 1;" class="img-fluid">		
+		<!--  <img src="<?php //echo get_template_directory_uri(); ?>/img/slide.jpg" alt="" style="z-index: 2; opacity: 1;" class="img-fluid">	 -->	
+		<?php if ( has_post_thumbnail() ) {the_post_thumbnail();}?>
 	</div>
 	<div class="frame"></div>
 	<div class="search_stock">
@@ -103,7 +111,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="section bg_section">
 
 	<div class="container-fluid">
@@ -212,6 +219,7 @@
 	</div>
 </div>
 <div class="section welcome">
+	<div class="transparent_bg"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-12"><span>welcome to the elite cars</span></div>
@@ -238,12 +246,12 @@
 		<div class="row">
 			<div class="col-12">
 				<ul class="inline">
-					<li class="active">All</li>
-					<li>Cadillac</li>
-					<li>Range Rover</li>
-					<li>Porsche</li>
-					<li>BMW</li>
-					<li>Nissan</li>
+					<li><a href="" class="btn e_button_two selected">All</a></li>
+					<li><a href="" class="btn e_button_two">Cadillac</a></li>
+					<li><a href="" class="btn e_button_two">Range Rover</a></li>
+					<li><a href="" class="btn e_button_two">Porsche</a></li>
+					<li><a href="" class="btn e_button_two">BMW</a></li>
+					<li><a href="" class="btn e_button_two">Nissan</a></li>
 				</ul>
 			</div>
 		</div>
@@ -361,7 +369,7 @@
 					</div>
 					<div>VIEW OUR STOCK</div>
 					<div>We have one of the largest showrooms in Dubai.</div>
-					<div><a href="">View All Our stock</a></div>
+					<div><a href="" class="btn e_button_two">View All Our stock</a></div>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -373,7 +381,7 @@
 					</div>
 					<div>Meet our team</div>
 					<div>We have a friendly, knowledgeable and multilingual team of sales executives who make car shopping an exciting and stress-free experience.</div>
-					<div><a href="">Contact us</a></div>
+					<div><a href="" class="btn e_button_two">Contact us</a></div>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -385,7 +393,7 @@
 					</div>
 					<div>elite motors services</div>
 					<div>We dont just sell cars, we also offer repairs, maintenance and valet services.</div>
-					<div><a href="">view services</a></div>
+					<div><a href="" class="btn e_button_two">view services</a></div>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -397,7 +405,7 @@
 					</div>
 					<div>promotions</div>
 					<div>We have one of the largest showrooms in Dubai.</div>
-					<div><a href="">current promotions</a></div>
+					<div><a href="" class="btn e_button_two">current promotions</a></div>
 				</div>
 			</div>
 		</div>
@@ -459,7 +467,6 @@
 		</div>
 		<div class="col-12 text-center btn-container">
 			<a href="" class="btn e_button_two">
-				<span>View All our blog posts</span>
 				<span>View All our blog posts</span>
 			</a>
 		</div>
