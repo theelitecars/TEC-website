@@ -264,7 +264,7 @@ Template Name: home
 					<div class="title clampThis">
 						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
 					</div>
-					<div class="price">
+					<div class="price_e">
 						<span>AED 1,000,000</span>
 					</div>
 					<div class="selection"></div>
@@ -276,7 +276,7 @@ Template Name: home
 					<div class="title clampThis">
 						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
 					</div>
-					<div class="price">
+					<div class="price_e">
 						<span>AED 1,000,000</span>
 					</div>
 					<div class="selection"></div>
@@ -288,7 +288,7 @@ Template Name: home
 					<div class="title clampThis">
 						RANGE ROVER VOUGE HSE 2016
 					</div>
-					<div class="price">
+					<div class="price_e">
 						<span>AED 1,000,000</span>
 					</div>
 					<div class="selection"></div>
@@ -300,7 +300,7 @@ Template Name: home
 					<div class="title clampThis">
 						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
 					</div>
-					<div class="price">
+					<div class="price_e">
 						<span>AED 1,000,000</span>
 					</div>
 					<div class="selection"></div>
@@ -312,7 +312,7 @@ Template Name: home
 					<div class="title clampThis">
 						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
 					</div>
-					<div class="price">
+					<div class="price_e">
 						<span>AED 1,000,000</span>
 					</div>
 					<div class="selection"></div>
@@ -324,7 +324,7 @@ Template Name: home
 					<div class="title clampThis">
 						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
 					</div>
-					<div class="price">
+					<div class="price_e">
 						<span>AED 1,000,000</span>
 					</div>
 					<div class="selection"></div>
@@ -336,7 +336,7 @@ Template Name: home
 					<div class="title clampThis">
 						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
 					</div>
-					<div class="price">
+					<div class="price_e">
 						<span>AED 1,000,000</span>
 					</div>
 					<div class="selection"></div>
@@ -348,7 +348,7 @@ Template Name: home
 					<div class="title clampThis">
 						RANGE ROVER VOUGE HSE 2016RANGE ROVER VOUGE HSE 2016
 					</div>
-					<div class="price">
+					<div class="price_e">
 						<span>AED 1,000,000</span>
 					</div>
 					<div class="selection"></div>
