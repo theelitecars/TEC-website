@@ -422,49 +422,32 @@ Template Name: home
 			</div>
 		</div>
 	</div>
+
+ 
+<?php wp_reset_postdata(); ?>
 	<div class="row no-gutters">
+    <?php $catquery = new WP_Query( 'field=home&posts_per_page=3' ); ?>
+    <?php while($catquery->have_posts()) : $catquery->the_post();
+	$featured_img_url = get_the_post_thumbnail_url($catquery->ID, 'medium_large'); 
+	 ?>
 		<div class="col-sm-4">
 			<div class="blog">
 				<div class="img-box">
-					<div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog1.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
+					<div class="img" style="background-image: url('<?php echo $featured_img_url; ?>'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
 					</div>
 				</div>
 				<div class="title clampThis">
-					De Finibus Bonorum et Malorum
+					<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 				</div>
 				<div class="intro_content clampThis2">
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-4">
-			<div class="blog">
-				<div class="img-box">
-					<div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog2.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
-					</div>
-				</div>
-				<div class="title clampThis">
-					De Finibus Bonorum et Malorum
-				</div>
-				<div class="intro_content clampThis2">
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="blog">
-				<div class="img-box">
-					<div class="img" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/blog3.jpg'); background-size: cover; background-position: center center;background-repeat: no-repeat;">
-					</div>
-				</div>
-				<div class="title clampThis">
-					De Finibus Bonorum et Malorum
-				</div>
-				<div class="intro_content clampThis2">
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-				</div>
-			</div>
-		</div>
+        <?php endwhile; ?> 
+        
+		 
+		 
 		<div class="col-12 text-center btn-container">
 			<a href="" class="btn e_button_two">
 				<span>View All our blog posts</span>
