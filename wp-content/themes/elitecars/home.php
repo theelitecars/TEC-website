@@ -416,9 +416,9 @@
 	</div>
 
  
-<?php wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
 	<div class="row no-gutters">
-    <?php $catquery = new WP_Query( 'field=home&posts_per_page=3' ); ?>
+    <?php $catquery = new WP_Query( 'field=home&posts_per_page=3' ); // get latest post in home category ?>
     <?php while($catquery->have_posts()) : $catquery->the_post();
 	$featured_img_url = get_the_post_thumbnail_url($catquery->ID, 'medium_large'); 
 	 ?>
@@ -432,7 +432,7 @@
 					<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 				</div>
 				<div class="intro_content clampThis2">
-					<?php the_content(); ?>
+					<?php echo wp_trim_words( get_the_content(), 100, '...' );?>
 				</div>
 			</div>
 		</div>
