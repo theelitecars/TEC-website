@@ -13,6 +13,11 @@ Template Name: home
 		<?php if ( has_post_thumbnail() ) {the_post_thumbnail();}?>
 	</div>
 	<div class="frame"></div>
+	<div class="content-slider">
+		<span>Lorem Ipsum Dolor</span>
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+		<div><a href="" class="btn e_button_three">View Our Stocks</a></div>
+	</div>
 	<div class="search_stock">
 		<div class="container-fluid">
 			<div class="header">

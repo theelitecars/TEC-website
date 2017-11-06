@@ -53,6 +53,25 @@ a.btn.e_button_two {
 	}
 }
 
+a.btn.e_button_three {
+	&:focus {
+		box-shadow: none;
+	}
+
+	color: #000;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 18px;
+	background-color: #fff;
+	
+    transition: background 0.2s ease;
+
+	&:hover, &.active {
+		background-color: #000;
+		color: #fff;
+	}
+}
+
 button, select {
 	width: 100%;
 	padding: 7px;
@@ -411,6 +430,45 @@ header#masthead {
 		border-bottom: 0px;
 	}
 
+	.content-slider {
+		position: absolute;
+		width: 100%;
+		max-width: 870px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+
+		span {
+			line-height: 1;
+			color: #fff;
+			display: block;
+
+			&:first-child {
+				font-size: 40px;
+				font-family: 'Roboto Condensed', sans-serif;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+
+			&:nth-child(2) {
+				line-height: 1.5;
+				font-size: 18px;
+				font-family: 'Open Sans', sans-serif;
+				margin-bottom: 30px;
+			}
+		}
+		div {
+			text-align: center;
+			a.btn.e_button_three {
+				font-size: 22px;
+				padding: 8px 15px;
+			}
+		}
+	}
+
 	.search_stock {
 		position: absolute;
 		bottom: 0;
@@ -423,8 +481,8 @@ header#masthead {
 			margin: 0 auto;
 			padding-left: 10px;
 			padding-right: 10px;
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 5px;
+			padding-bottom: 20px;
 
 			.header {
 				color: #fff;
