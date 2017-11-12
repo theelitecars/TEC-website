@@ -134,14 +134,20 @@ function wpcf_fields_wysiwyg_view( $params ) {
     $content = stripslashes( $params['field_value'] );
 
 	$the_content_default_filters = array(
-		'wptexturize', 'convert_smilies', 'convert_chars', 'wpautop',
-		'shortcode_unautop', 'prepend_attachment', 'capital_P_dangit', 'do_shortcode'
+		'wptexturize' => 10,
+		'wpautop' => 10,
+		'shortcode_unautop' => 10,
+		'prepend_attachment' => 10,
+		'convert_chars' => 10,
+		'capital_P_dangit' => 11,
+		'do_shortcode' => 11,
+        'convert_smilies' => 20,
     );
 
 	if ( isset( $params['suppress_filters'] ) && $params['suppress_filters'] == 'true' ) {
 		// suppress filter is used, we still apply the default filters
 		// (otherwise WYSIWYG is no more than a multiline field)
-		foreach ( $the_content_default_filters as $func ) {
+		foreach ( $the_content_default_filters as $func => $priority ) {
 			if ( function_exists( $func ) ) {
 				$content = call_user_func( $func, $content );
 			}
@@ -151,21 +157,29 @@ function wpcf_fields_wysiwyg_view( $params ) {
 
 	} else {
 		$filter_state = new WPCF_WP_filter_state( 'the_content' );
+        $applied_original_filters = array();
 
 		// make sure all default
-		foreach ( $the_content_default_filters as $filter ) {
+		foreach ( $the_content_default_filters as $filter => $priority ) {
 			if ( has_filter( 'the_content', $filter ) ) {
 				// filter is registered and will be applied by apply_filters() after this loop
 				continue;
 			}
 
-			if ( function_exists( $filter ) ) {
-				// apply filter function
-				$content = call_user_func( $filter, $content );
-			}
+			// add filter again
+            add_filter( 'the_content', $filter, $priority );
+
+			// store added filter
+            $applied_original_filters[$filter] = $priority;
 		}
 
-        $output .= apply_filters( 'the_content', $content );
+
+		$output .= apply_filters( 'the_content', $content );
+
+		// remove all previously added filters
+		foreach( $applied_original_filters as $filter => $priority ) {
+		    remove_filter( 'the_content', $filter, $priority );
+        }
         
         if  ((!(strpos( $output, "&amp;#91;") === false)) && (!( strpos( $output, "&amp;#93;") === false)) && (!(strpos( $output, "<pre") === false)) ) {
         	global $SyntaxHighlighter;

@@ -50,8 +50,7 @@
     if($(".menu ul li a").next(".sub-menu").length !== 0) {
     	$(".menu ul li .sub-menu").prev().append("<div class=\"down\"><i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i></div>");
     
-    	$(".mobile-view ul li .sub-menu").prev().on("click", function(e) {
-    		e.preventDefault();
+    	$(".mobile-view ul li .sub-menu").prev().on("click", function() {
     		if(!$(this).next().hasClass("expand")) {
     			$(".mobile-view ul li .sub-menu").not($(this)).removeClass("expand");
 				$(this).next().addClass("expand");

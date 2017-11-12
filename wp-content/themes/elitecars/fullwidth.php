@@ -4,10 +4,8 @@
  */
 
 get_header(); ?>
-
-	<section id="primary" class="content-area col-sm-12">
+	<section id="primary" class="content-area col-sm-12" style="padding-left: 0px;padding-right:0px; ">
 		<main id="main" class="site-main" role="main">
-
 			<?php
 			while ( have_posts() ) : the_post();
 

@@ -6,8 +6,8 @@ Text Domain: wpcf
 Domain Path: /embedded/locale
 License: GPLv2
 Requires at least: 3.7
-Tested up to: 4.8.1
-Stable tag: 2.2.18
+Tested up to: 4.9
+Stable tag: 2.2.19
 
 The complete and reliable plugin for managing custom post types, custom taxonomies and custom fields.
 
@@ -157,6 +157,9 @@ Additionally, Types is the only plugin that lets you define parent/child relatio
 10. Bulk editing child content using Field Tables
 
 == Changelog ==
+
+= 2.2.19 =
+* Fixed an issue when using 3rd party shortcodes on the WYSIWYG field
 
 = 2.2.18 =
 * Fixed an issue when adding option to checkbox / radio / select field

@@ -14,9 +14,24 @@ Template Name: home
 	</div>
 	<div class="frame"></div>
 	<div class="content-slider">
-		<span>Lorem Ipsum Dolor</span>
-		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-		<div><a href="" class="btn e_button_three">View Our Stocks</a></div>
+		<?php
+			if( apply_filters( 'types_is_active', false ) ) {
+				$the_query = new WP_Query( array('post_type' => 'home-page-content', 'category_name' => 'slider-contents' ));
+
+				if ( $the_query->have_posts() ) {
+					while ( $the_query->have_posts() ) {
+						$the_query->the_post();
+						$the_custom_button_name = get_post_meta( get_the_ID(), "wpcf-custom-button-name", true);
+		?>
+						<span><?php the_title(); ?></span>
+						<span><?php the_content(); ?></span>
+						<div><a href="" class="btn e_button_three"><?php echo $the_custom_button_name; ?></a></div>
+		<?php
+					}
+					wp_reset_postdata();
+				}
+			}
+		?>
 	</div>
 	<div class="search_stock">
 		<div class="container-fluid">
@@ -227,12 +242,27 @@ Template Name: home
 	<div class="transparent_bg"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-12"><span>welcome to the elite cars</span></div>
-			<div class="col-12">
-				<p>
-					There are a number of new and used car dealers in Dubai, but there are two things that set us apart from the competition: luxury vehicles at the most competitive prices and uncompromising customer service. Offering over 200 British, German and Italian luxury car brands such as Land Rover, BMW, Mercedes, Jaguar, Porsche, Ferrari, and Maserati at our showrooms in two locations, we offer a wide selection to choose from. Hence, you will find the one that perfectly suit your needs, lifestyle and budget.
-				</p>
-			</div>
+			<!-- the welcome section -->
+			<?php
+
+				$the_query = new WP_Query( array('post_type' => 'home-page-content', 'category_name' => 'welcome' ));
+
+				if ( $the_query->have_posts() ) {
+
+					while ( $the_query->have_posts() ) {
+						$the_query->the_post();
+			?>
+					<div class="col-12"><span><?php the_title(); ?></span></div>
+					<div class="col-12">
+						<p>
+							<?php the_content(); ?>
+						</p>
+					</div>
+			<?php
+					}
+					wp_reset_postdata();
+				}
+			?>
 		</div>
 	</div>
 </div>
@@ -365,54 +395,35 @@ Template Name: home
 <div class="section bg_section quick_links">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-3">
-				<div class="quick_link">
-					<div>
-						<div class="icon">
-							<i class="fa fa-car" aria-hidden="true"></i>
+			<!-- the quick links section -->
+			<?php  
+				if( apply_filters( 'types_is_active', false ) ) {
+					$args = array( 'post_type' => 'home-page-content', 'category_name'=> 'quick-links-section' );
+					$the_query = new WP_Query( $args ); 
+
+					if($the_query->have_posts()) {
+
+						while($the_query->have_posts()) : $the_query->the_post();
+						$the_post_icon = get_post_meta( get_the_ID(), "wpcf-post-icon", true);
+						$the_custom_button_name = get_post_meta( get_the_ID(), "wpcf-custom-button-name", true);
+			?>
+						<div class="col-md-3">
+							<div class="quick_link">
+								<div>
+									<div class="icon">
+										<?php echo $the_post_icon; ?>
+									</div>
+								</div>
+								<div><?php the_title(); ?></div>
+								<div><?php the_content(); ?></div>
+								<div><a href="" class="btn e_button_two"><?php echo $the_custom_button_name; ?></a></div>
+							</div>
 						</div>
-					</div>
-					<div>VIEW OUR STOCK</div>
-					<div>We have one of the largest showrooms in Dubai.</div>
-					<div><a href="" class="btn e_button_two">View All Our stock</a></div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="quick_link">
-					<div>
-						<div class="icon">
-							<i class="fa fa-users" aria-hidden="true"></i>
-						</div>
-					</div>
-					<div>Meet our team</div>
-					<div>We have a friendly, knowledgeable and multilingual team of sales executives who make car shopping an exciting and stress-free experience.</div>
-					<div><a href="" class="btn e_button_two">Contact us</a></div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="quick_link">
-					<div>
-						<div class="icon">
-							<i class="fa fa-wrench" aria-hidden="true"></i>
-						</div>
-					</div>
-					<div>elite motors services</div>
-					<div>We dont just sell cars, we also offer repairs, maintenance and valet services.</div>
-					<div><a href="" class="btn e_button_two">view services</a></div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="quick_link">
-					<div>
-						<div class="icon">
-							<i class="fa fa-bullhorn" aria-hidden="true"></i>
-						</div>
-					</div>
-					<div>promotions</div>
-					<div>We have one of the largest showrooms in Dubai.</div>
-					<div><a href="" class="btn e_button_two">current promotions</a></div>
-				</div>
-			</div>
+			<?php
+						endwhile;
+					}
+				}
+			?>
 		</div>
 	</div>
 </div>

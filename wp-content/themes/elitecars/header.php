@@ -90,3 +90,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				<?php endif; ?>
+				<?php if (!is_front_page()) : ?>
+					<div class="slider-other" style="background: #000 url('<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url("full");}?>') center center no-repeat;background-size: cover;">
+						<div class="container">
+							<span><?php echo get_the_title(); ?></span>
+						</div>
+						
+					</div>
+				<?php endif; ?>

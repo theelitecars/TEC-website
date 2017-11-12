@@ -207,6 +207,18 @@ function wp_bootstrap_starter_password_form() {
     return $o;
 }
 add_filter( 'the_password_form', 'wp_bootstrap_starter_password_form' );
+ 
+function add_my_post_types_to_query( $query ) {
+    if ( is_home() && $query->is_main_query() )
+        $query->set( 'post_type', array( 'post', 'home-page-content' ) );
+    return $query;
+}
+
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+
+function content_shortcode () {
+    
+}
 
 
 /**
