@@ -600,6 +600,25 @@ header#masthead {
 			}
 		}
 
+		&.meet-our-team {
+			img {
+				width: 100%;
+				height: auto;
+			}
+			p {
+				color: #777;
+			}
+			.img-container {
+				overflow: hidden;
+				> img {
+					transition: all 0.2s ease-in-out;
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+
 		&.partners {
 			img {
 				width: 100%;
@@ -656,6 +675,7 @@ header#masthead {
 				}
 			}
 			.company-social-icons {
+				margin-bottom: 20px;
 				> ul {
 					> li {
 						margin-right: 5px;
@@ -688,6 +708,26 @@ header#masthead {
 							}
 						}
 					}
+				}
+			}
+			.readmore {
+				a {
+					color: $tec-color;
+				}
+			}
+		}
+
+		&.importexport {
+			img {
+				width: 100%;
+				height: auto;
+			}
+			p {
+				color: #777;
+			}
+			ul {
+				> li {
+					color: #777;
 				}
 			}
 		}
